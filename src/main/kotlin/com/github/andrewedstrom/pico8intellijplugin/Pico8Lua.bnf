@@ -6,7 +6,7 @@
   psiClassPrefix="Pico8"
   psiImplClassSuffix="Impl"
   psiPackage="com.github.andrewedstrom.psi"
-  psiImplPackage="com.github.andrewedstrom.impl"
+  psiImplPackage="com.github.andrewedstrom"
 
   elementTypeHolderClass="com.github.andrewedstrom.Pico8Types"
   elementTypeClass="com.github.andrewedstrom.Pico8ElementType"

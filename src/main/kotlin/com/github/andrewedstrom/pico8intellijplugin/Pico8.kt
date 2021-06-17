@@ -1,11 +1,13 @@
 package com.github.andrewedstrom.pico8intellijplugin
 
 import com.intellij.lang.Language
+import com.intellij.lexer.FlexAdapter
 import com.intellij.openapi.fileTypes.LanguageFileType
 import com.intellij.openapi.util.IconLoader
 import com.intellij.psi.tree.IElementType
 import org.jetbrains.annotations.NonNls
 import javax.swing.Icon
+
 
 object Pico8Language : Language("PICO-8") {
 }
@@ -32,11 +34,13 @@ object Pico8FileType : LanguageFileType(Pico8Language) {
     }
 }
 
-class Pico8TokenType(debugName: @NonNls String) : IElementType(debugName, Pico8Language) {
+public class Pico8TokenType(debugName: @NonNls String) : IElementType(debugName, Pico8Language) {
     override fun toString(): String {
         return "Pico8TokenType." + super.toString()
     }
 }
 
 
-class Pico8ElementType(debugName: @NonNls String) : IElementType(debugName, Pico8Language)
+public class Pico8ElementType(debugName: @NonNls String) : IElementType(debugName, Pico8Language)
+
+class Pico8LexerAdapter : FlexAdapter(Pico8Lexer(null))
