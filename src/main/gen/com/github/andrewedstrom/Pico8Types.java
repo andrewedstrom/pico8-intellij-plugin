@@ -1,8 +1,6 @@
 // This is a generated file. Not intended for manual editing.
 package com.github.andrewedstrom;
 
-import com.github.andrewedstrom.pico8intellijplugin.Pico8ElementType;
-import com.github.andrewedstrom.pico8intellijplugin.Pico8TokenType;
 import com.intellij.psi.tree.IElementType;
 import com.intellij.psi.PsiElement;
 import com.intellij.lang.ASTNode;
