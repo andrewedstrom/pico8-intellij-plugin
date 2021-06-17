@@ -1,6 +1,6 @@
-package com.github.andrewedstrom.pico8intellijplugin.listeners
+package com.github.andrewedstrom.listeners
 
-import com.github.andrewedstrom.pico8intellijplugin.services.MyProjectService
+import com.github.andrewedstrom.services.MyProjectService
 import com.intellij.openapi.components.service
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.project.ProjectManagerListener

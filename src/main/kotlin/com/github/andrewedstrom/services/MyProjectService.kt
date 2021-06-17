@@ -1,6 +1,6 @@
-package com.github.andrewedstrom.pico8intellijplugin.services
+package com.github.andrewedstrom.services
 
-import com.github.andrewedstrom.pico8intellijplugin.MyBundle
+import com.github.andrewedstrom.MyBundle
 import com.intellij.openapi.project.Project
 
 class MyProjectService(project: Project) {

@@ -1,4 +1,4 @@
-package com.github.andrewedstrom.pico8intellijplugin
+package com.github.andrewedstrom
 
 import com.intellij.lang.Language
 import com.intellij.lexer.FlexAdapter

@@ -1,4 +1,4 @@
-package com.github.andrewedstrom.pico8intellijplugin
+package com.github.andrewedstrom
 
 import com.github.andrewedstrom.Pico8Parser
 import com.github.andrewedstrom.Pico8Types
