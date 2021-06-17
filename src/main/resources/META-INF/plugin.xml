@@ -7,13 +7,18 @@
     <!-- https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
     <depends>com.intellij.modules.platform</depends>
 
+<!--    <extensions defaultExtensionNs="com.intellij">-->
+<!--        <applicationService serviceImplementation="com.github.andrewedstrom.pico8intellijplugin.services.MyApplicationService"/>-->
+<!--        <projectService serviceImplementation="com.github.andrewedstrom.pico8intellijplugin.services.MyProjectService"/>-->
+<!--    </extensions>-->
+
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.andrewedstrom.pico8intellijplugin.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.andrewedstrom.pico8intellijplugin.services.MyProjectService"/>
+        <fileType name="PICO-8" implementationClass="com.github.andrewedstrom.pico8intellijplugin.Pico8FileType"
+                  fieldName="INSTANCE" language="PICO-8" extensions="p8;lua"/>
     </extensions>
 
-    <applicationListeners>
-        <listener class="com.github.andrewedstrom.pico8intellijplugin.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
-    </applicationListeners>
+<!--    <applicationListeners>-->
+<!--        <listener class="com.github.andrewedstrom.pico8intellijplugin.listeners.MyProjectManagerListener"-->
+<!--                  topic="com.intellij.openapi.project.ProjectManagerListener"/>-->
+<!--    </applicationListeners>-->
 </idea-plugin>
